@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import '../styles/recipe.css'
+import style from "../styles/recipe.module.css";
 const users = {
 	name: "Samuel",
 	age: "22",
@@ -15,7 +15,7 @@ console.log(users);
 const Recipes = ()=>{
     let [user,setUser] = useState(users);
     return (
-		<div className="recipe">
+		<div className={style.recipe}>
 			<div>
 				<h1>{user.name}</h1>
 				<p>{user.job}</p>
