@@ -9,7 +9,7 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.js$/,
+				test: /\.jsx?$/,
 				exclude: /node_modules/,
 				use: {
 					loader: "babel-loader",
@@ -18,16 +18,19 @@ module.exports = {
 			{
 				test: /\.css$/i,
 				exclude: /node_modules/,
-				use: [MiniCssExtractPlugIn.loader,"css-loader"],
+				use: [MiniCssExtractPlugIn.loader, "css-loader"],
 			},
 		],
 	},
-    plugins:[new MiniCssExtractPlugIn()],
+	plugins: [new MiniCssExtractPlugIn()],
+	resolve: {
+		extensions: [".js", ".jsx"],
+	},
 	devtool: "source-map",
 	devServer: {
 		static: {
 			directory: path.join(__dirname, "/dist"),
 		},
-        hot:true
+		hot: true,
 	},
 };

@@ -1,7 +1,8 @@
-import './styles/app.css'
-const users={
-    name:'Samuel',
-    age:'22',
-    job:'developer'
-}
-console.log(users)
+// import React from 'react'
+import {createRoot} from 'react-dom/client';//createRoot
+import React from 'react'
+import App from './components/App'
+const container = document.getElementById("root");
+
+const root = createRoot(container)
+root.render(<App/>);

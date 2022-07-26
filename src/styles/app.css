@@ -1,6 +1,12 @@
 body{
     margin: 0;
-    background-color: rgb(96, 37, 89);
+    background-color: rgb(188, 138, 183);
     font-family:monospace;
     color: white;
+}
+
+.main{
+    text-align: center;
+    padding: 20px;
+    background-color: maroon;
 }
