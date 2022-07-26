@@ -1,7 +1,7 @@
 .recipe{
     background-color: lightblue;
     color: black;
-    width: 500px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 15px 0;
 }
