@@ -1,3 +1,4 @@
+import './styles/app.css'
 const users={
     name:'Samuel',
     age:'22',
